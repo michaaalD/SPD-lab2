@@ -1,3 +1,31 @@
+/*
+Sprawozdanie
+Michal Dos 263498
+Lab 2 
+
+	Algorytm:
+        -Tworzy tablice F o rozmiarze 2^n, gdzie n to liczba zadan.
+        - Inicjalizuje F[0] na 0.
+        Dla kazdego niepustego podzbioru zadań (reprezentowanego przez zmienna set):
+            Oblicza sumę czasów trwania zadań w tym podzbiorze (oznaczoną jako c).
+            Inicjalizuje F[set] na dużą wartość (999999), reprezentując minimalna wagw zadan osiągalna dla danego podzbioru.
+            Dla kazdego zadania w podzbiorze:
+                Oblicza wage zadania pomnozona przez maksimum z (czas trwania - termin wykonania) i 0.
+                Aktualizuje F[set] jako minimum z obecnej wartosci F[set] i nowo obliczonej wagi zadania.
+        Ostateczna odpowiedz to F[N-1], gdzie N = 2^n. Ta wartosc reprezentuje minimalna sume wazona osiagalna przez wykonanie podzbioru zadan w ich terminach.
+
+    Wynik:
+        Program wypisuje optymalne rozwiazanie (minimalna sume wazona) dla kazdego zestawu danych.
+
+
+
+*/
+
+
+
+
+
+
 #include <iostream>
 #include <fstream>
 
